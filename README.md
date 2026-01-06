@@ -1,3 +1,4 @@
 Code for my blog: [https://samarkanov.info/blog/2026/jan/generating-lightweight-surrogates-with-llms.html](https://samarkanov.info/blog/2026/jan/generating-lightweight-surrogates-with-llms.html)
 
+### TL;DR
 High-fidelity simulations are powerful but slow. Traditionally, creating faster "surrogate" models is a manual, multi-step process. In this post, I demonstrate how to **automate the entire surrogate construction workflow** by using an LLM agent. By interfacing with a Simulink model via an **MCP (Model Context Protocol)** server, the agent autonomously runs simulations, analyzes "golden data," and implements a data-driven interpolation algorithm to create a lightweight, high-speed model.
