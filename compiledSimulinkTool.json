@@ -1,0 +1,43 @@
+{
+  "signatures": [
+      {
+        "compiledSimulinkTool": { 
+            "function": "compiledSimulinkTool",
+            "input": {
+                "name": ["type"],
+                "type": ["string"]
+            },
+            "output": {
+                "name": ["res"], 
+                "type": ["string"]
+            }
+        }
+      }
+  ],
+  "tools": [
+    {
+        "name": "compiledSimulinkTool",
+        "description": "Return the JSON-encoded rounded timeseries after running a simulation. Supported types: simple",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Name of the sequence to generate."
+                }
+            },
+            "required": ["type"]
+        },
+        "outputSchema": {
+            "type": "object",
+            "properties": {
+                "seq": {
+                    "type": "number",
+                    "description": "Generated timeseries."
+                }
+            },
+            "required": ["res"]
+        }
+    }
+  ]
+}

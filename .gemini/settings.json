@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "simulink-mcp": {
+      "httpUrl": "http://localhost:9910/compiledSimulinkTool/mcp"
+    }
+  }
+}
